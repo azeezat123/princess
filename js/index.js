@@ -10,7 +10,7 @@ function initMap() {
   }
   map = new google.maps.Map(document.getElementById('map'), {
     center: Nigeria,
-    zoom: 8
+    zoom: 4
   });
 
 
@@ -132,24 +132,26 @@ function createMarker(latlng, name, website, statusText, phone, index) {
     `;
 
 
-    // var icon = {
-    //     path: "M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z", //SVG path of awesomefont marker
-    //     fillColor: '#333333', 
-    //     fillOpacity: 1,
-    //     strokeWeight: 0,
-    //     scale: 0.09, 
-    //     anchor: new google.maps.Point(200,510), 
-    //     labelOrigin: new google.maps.Point(205,190) 
-    // }
+        var icon = {
+             path: "M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z", //SVG path of awesomefont marker
+             fillColor: '#333333', 
+            fillOpacity: 1,
+           strokeWeight: 0,
+           scale: 0.08, 
+           anchor: new google.maps.Point(200,510), 
+         labelOrigin: new google.maps.Point(205,190) 
+     }
 
     var marker = new google.maps.Marker({
      position: latlng,
+     icon: icon,
       map: map,
       label: {
         fontFamily: "'Font Awesome 5 Free'",
-        text:   '\uf0f7',
+        text:   '\uf0f8',
         fontWeight: 'bolder', 
-        color: '#000000',
+        color: '#ffffff',
+        fontSize: '16px',
       },
     });
 
