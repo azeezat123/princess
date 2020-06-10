@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universities In Nigeria</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="js/location-data.js"></script>
+    </head>
+    <body>
+        <div class="title">Universities In Nigeria</div>
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter zip" />
+                <i class="fas fa-search" onclick="searchUniversities()" ></i>
+            </div>
+        </div>
+        <div class="uni-list-container">
+            <div class="uni-list">
+                <div class="uni-container">
+                    <div class="uni-info-container">
+                        <div class="uni-address">
+                            <span>8480 Beverly Blvd</span>
+                            <span>Los Angeles, CA 90048</span>
+                        </div>
+                        <div class="uni-phone-number">356-345-4654</div>
+                    </div>
+                    <div class="uni-number-container">
+                        <div class="uni-number">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script src="js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRL3KdjACDVpZeGABNNTU_pPpq-CMVZRo&callback=initMap"
+        async defer></script>
+    </body>
+</html> 

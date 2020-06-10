@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#map {
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    font-size: 60px;
+    z-index: 30;
+    font-weight: bold;
+    color: #333333f1;
+}
+
+.search-container {
+    width: 400px;
+    height: 60px;
+    background-color: #ffffffde;
+    position: absolute;
+    z-index: 30;
+    top: 230px;
+    left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 #333333f1
+   
+}
+
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search input {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search i {
+    color: #333333b9;
+    font-size: 25px;
+}
+
+.uni-list-container {
+    width: 400px;
+    background-color: #333333f1;
+    position: absolute;
+    z-index: 30;
+    top: 320px;
+    left: 100px;
+    border-radius: 10px;
+    bottom: 20px;
+    box-shadow: 0 5px 15px 0 #333333f1;
+}
+
+.uni-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.uni-container {
+    display: flex;
+    border-bottom: 1px solid #979797;
+    cursor: pointer;
+}
+
+.uni-info-container {
+    flex-grow: 1;
+}
+
+.uni-address {
+    font-size: 21px;
+    color: #f3efefd3;
+    margin-top: 30px;
+}
+
+.uni-phone-number {
+    color: #B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.uni-number-container {
+    align-items: center;
+    display: flex;
+}
+
+.uni-number {
+    width: 30px;
+    height: 30px;
+    background-color: #f3efefd3;
+    color: #454e53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.uni-address span {
+    display: block;
+}
+
+
+.uni-info-window {
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.uni-info-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0, 0.87);
+}
+
+.uni-info-status {
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+}
+
+.uni-info-address, .uni-info-phone {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.uni-info-address .circle, .uni-info-phone .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.uni-container-background {
+    width: 100%;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    transition: background 0.2s ease-in-out;
+}
+
+.uni-container-background:hover {
+    background-color: #ffffff83;
+}
